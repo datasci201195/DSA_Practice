@@ -1,7 +1,7 @@
 [project]
 name = "dsa-practice"
 version = "0.1.0"
-description = "Add your description here"
+description = "Personal DSA practice solutions in Python"
 readme = "README.md"
 authors = [
     { name = "Rupesh Patel", email = "datasci.patel.rupesh@gmail.com" }
@@ -9,12 +9,8 @@ authors = [
 requires-python = ">=3.12"
 dependencies = []
 
-[project.scripts]
-dsa-practice = "dsa_practice:main"
-
-[build-system]
-requires = ["uv_build>=0.11.14,<0.12.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
 
 [dependency-groups]
 dev = [
