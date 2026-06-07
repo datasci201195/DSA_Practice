@@ -6,14 +6,14 @@ class Solution:
 
         # Linear Solution O(n)
         res = 0
-        l, r = 0, len(heights) - 1
+        left, r = 0, len(heights) - 1
 
-        while l < r:
-            area = (r-l) * max(heights[l], heights[r])
+        while left < r:
+            area = (r-left) * max(heights[left], heights[r])
             res = max(area,res)
 
-            if heights[l] < heights[r]:
-                l += 1
+            if heights[left] < heights[r]:
+                left += 1
             else:
                 r -= 1
 
