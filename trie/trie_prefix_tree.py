@@ -12,7 +12,7 @@ class Trie:
         for c in word:
             if c not in curr.children:
                 curr.children[c] = TrieNode()
-            curr = curr.children
+            curr = curr.children[c]
         curr.word = True
 
     def serch(self,word):
